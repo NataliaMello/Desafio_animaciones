@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: sans-serif;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+.header__contenido{
+    position: relative;
+    z-index: 100;
+}
+.logo{
+    font-weight: 800;
+    font-size: 35px;
+    margin: 10px;
+    font-family: Cambria;
+    color: white;
+    
+}
+
+.banner{
+    height: 50vh;
+    margin-top: -70px;
+    position: relative;
+    background: url(../imagenes/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner__descripcion{
+    position: absolute;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50% ;
+    left: 50%;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.button__banner{
+    background: rgb(104, 158, 219);
+    border: none;
+    padding: 12px;
+    color: white;
+    font: size 20px; 
+    border-radius: 4px;
+    margin-top: 60px;
+}
+.button__banner:hover{
+    border: 2px solid rgb(104, 158, 219) ;
+    background: none;
+    
+}
+
+
+
+.galeria h1{
+    font-size: 40px;
+    text-align: center;
+    
+
+}
+
+.galeria{
+    margin: 20px;
+   
+
+}
+
+
+.team h1{
+    font-size: 40px;
+    text-align: center;
+
+}
+.team{
+    background:aliceblue;
+    padding: 30px;
+}
+
+.team__columna img{
+    border-radius:30% ;
+
+}
+
+.team p{
+    text-align: justify;
+    margin-top: 25px;
+
+}
+.team__grid{
+    display: grid;
+    grid-gap: 30px ;
+    margin-top: 30px;
+
+}
+
+.info h2{
+    color: cadetblue;
+    font-size: 30px;
+}
+.info{
+    text-align: center;
+}
+.info__columna{
+    margin: 20px;
+
+}
+
+.info .contenedor{
+    display: grid;
+    grid-gap:10px;
+}
+
+
+.banner2{
+    height: 50vh;
+    color: white;
+    position: relative;
+    background-image: url(../imagenes/banner.jpeg);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.banner2 h1{
+    font-size: 28px;
+}
+
+.banner2__descripcion{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+
+}
+
+.footer{
+    background: #292929;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }   
+
+    .banner h1 {
+    font-size: 42px;
+    }
+
+ .banner2 p{
+    font-size: 25px;
+
+ }
+ 
+ }
+
+
+
+
+
+ @media(min-width:728px){
+
+    .team .team__grid{
+        grid-template-columns: repeat(3 ,195px);
+        justify-content: space-around;
+    }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:520px)
+.banner h1 {
+    font: size 20px;
+}
+
+.grid{
+    display:grid;
+    grid-gap: 10px; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team .team__grid{
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+.info .contenedor{
+    grid-template-columns:  repeat( 3, 150px);
+    justify-content: space-around;
+
+}
+.banner2 h1{
+    font-size : 50px;
+}
+.banner2 p{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/*.........*/
+
+ 
+
+
+
+.galeria .contenedor h1{
+    margin:  25px;
+    color: cadetblue;
+    margin-top: 60px;
+    
+
+}
+
+ .team .contenedor h1{
+    margin-bottom: 35px;
+ }
+
+ .team .contenedor p{
+    color: cadetblue;
+    font-weight: bold;
+    margin-top: 30px;
+ }
+
+ #titulofinal{
+    color: white;
+ }
+
+        .header .logo{
+            text-align: center;
+           color: darkblue;
+            font-weight: bold;
+        
+        }
+
+    
+    
+        .nav__barflex{
+            display: flex;
+            
+            flex-wrap: wrap;
+            background-color: lightgrey;
+            box-shadow:0px 0px 10px;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            margin-top: -10px;
+            
+            position: absolute;
+            width: 99%;
+            margin-left: 0.5%;
+            
+        }
+       
+     
+        
+
+        .nav__item{
+            display:inline;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 180px;
+            color: cadetblue;
+            
+           
+           
+            
+                
+    }
+       
+    
+  .nav__item a{
+    text-decoration: none;
+    color: darkcyan;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  #navbut{
+    border-radius: 8px;
+    background-color: #292929;
+    color: white;
+    border: white solid 2px;
+    padding: 8px;
+  }
+
+  
+  .grid :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+  
+
+  
+
+  .animacion__prueba{
+    
+    display: flex;
+    width: 300px
+   ; height: 40px;
+   font-family: sans-serif;
+   font-size: 35px;
+   position: absolute;
+   top:0;
+   right:0;
+   bottom:0;
+   left: 0;
+   margin: auto;
+
+    overflow: hidden;
+
+
+}
+  .animacion__prueba ul{
+    list-style: none;
+    animation: cambiar 7s infinite;
+  }
+
+@keyframes cambiar {
+    0%  {margin top: 0;}
+    20%{margin-top: 0;}
+    25%{margin-top: -40px;}
+    25%{margin-top: -40px;}
+
+
+    55% {margin-top: -80px;}
+    80% {margin-top: -80px;}
+
+    85% {margin-top: -40px;}
+    95% {margin-top: -40px;}
+    100% {margin-top: 0px;}
+}
+
+
+
+/*...................Finalindex......*/
+
+
+#pruebaN{
+    text-decoration: none;
+    color: darkblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 45%;
+   
+    border: solid 2px cadetblue;
+    padding: 10px;
+}
+
+
+
+/*......form.....*/
+
+
+.form-register{
+	width: 400px;
+	background:#2C3E50;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color:white;
+	box-shadow: 7px 13px 37px #000;
+	margin-bottom: 90px;
+
+}
+
+.form-register h5{
+	font-size: 22px;
+	margin-bottom: 20px;
+
+}
+
+.controls__s{
+
+	width: 100%;
+	background:white;
+	padding: 8px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	border: 1px solid skyblue;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	
+}
+
+.form-register p{
+	height: 40px;
+	text-align: center;
+	font: 16px;
+	line-height: 40px;
+
+}
+
+.form-register a{
+	color :grey;
+	text-decoration: none;
+
+}
+
+.form-register a:hover{
+	color :grey;
+	text-decoration: underline;
+
+}
+
+.form-register .boton__s {
+	width: 50%;
+	background:antiquewhite;
+	border: none;
+	padding: 10px;
+	color:brown;
+margin-left: 25%;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 16px;
+font-weight: bold;
+
+
+}
+
+/*......animacion.....*/
+
+
+.container span {
+    font-size: 50pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .container span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+  }
+  .container span::after {
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+  }
+  .container span:hover {
+    filter: contrast(250%);
+  }
+  .container span:nth-child(1) {
+    color: #00bef8;
+  }
+  .container span:nth-child(2) {
+    color: #ff0697;
+  }
+  .container span:nth-child(3) {
+    color: #ff4d00;
+  }
+  .container span:nth-child(4) {
+    color: #ffe600;
+  }
+  .container span:nth-child(5) {
+    color: #bb00ff;
+  }
+
+
+
+
+
